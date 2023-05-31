@@ -4,11 +4,160 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
-  <header>
-  <nav></nav>
-  </header>>
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+  <body class="page">
+  <header class="page-header">
+  <nav class="main-nav">
+    <p class="logo">
+      <img src="img/logo.svg" width="140" height="70" alt="логотип">
+    </p>
+    <ul class="site-navigation">
+      <li class="site-navigation-item">
+        <a href="#">Главная</a>
+      </li>
+      <li class="site-navigation-item">
+        <a href="#">О седоне</a>
+      </li>
+      <li class="site-navigation-item">
+        <a href="#">Гостиницы</a>
+      </li>
+    </ul>
+    <ul class="user-navigation">
+      <li class="user-navigation-item">
+      <a class="search" href="#">
+        <img src="img/search.svg" width="20" height="20" alt="поиск">
+      </a>
+      </li>
+      <li class="user-navigation-item">
+        <a class="like" href="#">
+          <img src="img/harts.svg" width="20" height="20" alt="лайк">
+        </a>
+      </li>
+      <li class="user-navigation-item">
+        <button class="application-button" type="button">Хочу сюда</button>
+      </li>
+    </ul>
+  </nav>
+  </header>
+  <main class="main-content">
+    <h1 class="hidden">Седона</h1>
+    <section class="hero">
+      <img src="img/welcome.svg" width="458" height="352" alt="Слоган-Седона">
+      <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!
+      </h2>
+      <p>
+        Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+      </p>
+    </section>
+    <article class="feature feature-1">
+      <div class="feature-content">
+        <h3>Настоящий городок</h3>
+        <p class="feature-description">Седона — не аттракцион для туристов, там течёт своя жизнь
+        </p>
+        <img class="feature-img" src="img/advantage-sity.jpg" width="800" height="385" alt="Фото отеля">
+      </div>
+    </article>
+    <section class="feature-cards">
+      <ul class="feature-cards-list">
+        <li class="feature-cards-item">
+          <H3>Небольшая  площадь</H3>
+          <p class="card-description">
+            Все достопримечательности находятся очень близко
+          </p>
+        </li>
+        <li class="feature-cards-item">
+          <H3>Красивая дорога</H3>
+          <p class="card-description">
+            Ехать в Седону из Лас-Вегаса совсем не скучно!
+          </p>
+        </li>
+        <li class="feature-cards-item">
+          <H3>Мало туристов</H3>
+          <p class="card-description">
+            Большинство едет в Гранд Каньон и толпится там
+          </p>
+        </li>
+      </ul>
+    </section>
+    <article class="feature feature-2">
+      <div class="feature-content">
+        <h3>Там есть мост дьявола</h3>
+        <p class="feature-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется
+        </p>
+        <img class="feature-img" src="img/advantage-brige.jpg" width="800" height="385" alt="Дьявольсикй мост">
+      </div>
+    </article>
+    <section class="service">
+      <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+      <p class="service-description">Опытный персонал и качественное обслуживание!</p>
+      <ul class="service-cards-list">
+        <li class="service-cards-item">
+          <H3>Жильё</H3>
+          <p class="card-description">
+            Рекомендуем пожить в настоящем мотеле,
+            всё как в кино!
+          </p>
+        </li>
+        <li class="service-cards-item">
+          <H3>Еда</H3>
+          <p class="card-description">
+            Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+          </p>
+        </li>
+        <li class="service-cards-item">
+          <H3>Сувениры</H3>
+          <p class="card-description">
+            Не только китайского, но и настоящего местного производства!          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="hotel-search">
+      <h2>Заинтересовались?</h2>
+      <p class="hotel-search-description">
+        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+      </p>
+      <a href="#" class="hotel-search-link">Поиск гостиницы в Cедоне</a>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <section class="footer-feedback">
+      <h2>Подпишитесь на рассылку</h2>
+      <p class="feedback-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <div class="feedback-form">
+        <form id="form-subscribe" action="#" method="post">
+          <input name="email" required="" type="text" class="feedback-form-email" placeholder="ваш email"> <button class="feedback-form-button">Подписаться</button>
+        </form>
+      </div>
+      <section class="contacts">
+        <h2 class="hidden">Контакты</h2>
+        <ul class="contact-items">
+          <li class="contact-item">
+              <ul class="social-list">
+                <li class="social-item">
+                  <a href="#">
+                    <img src="img/social-vk.svg" alt="Vk" width="10" height="10">
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#">
+                    <img src="img/social-telegram.svg" alt="telegram" width="10" height="10">
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#">
+                    <img src="img/social-youtube.svg" alt="youtube" width="10" height="10">
+                  </a>
+                </li>
+              </ul>
+          </li>
+          <li class="contact-item">
+              <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </li>
+          <li class="contact-item">
+              <img class="contacts-img" src="img/logo_htmlacademy.svg" width="115" height="33" alt="Лого HTML-academy">
+          </li>
+        </ul>
+      </section>
+    </section>
+  </footer>
   </body>
 </html>
