@@ -53,7 +53,7 @@
         <h3>Настоящий городок</h3>
         <p class="feature-description">Седона — не аттракцион для туристов, там течёт своя жизнь
         </p>
-        <img class="feature-img" src="img/advantage-sity.jpg" width="800" height="385" alt="Фото отеля">
+        <img class="feature-img" src="#" width="800" height="385" alt="Фото отеля">
       </div>
     </article>
     <section class="feature-cards">
@@ -83,7 +83,7 @@
         <h3>Там есть мост дьявола</h3>
         <p class="feature-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется
         </p>
-        <img class="feature-img" src="img/advantage-brige.jpg" width="800" height="385" alt="Дьявольсикй мост">
+        <img class="feature-img" src="#" width="800" height="385" alt="Дьявольсикй мост">
       </div>
     </article>
     <section class="service">
@@ -169,21 +169,21 @@
         <label class="modal-lable" for="date-field">
           Дата Заезда
         </label>
-        <input class="modal-date" type="text" name="date" id="date-field" value="27 апреля 2020">
+        <input class="modal-date" type="text" name="date-start" id="date-field" value="27 апреля 2020">
         <p class="error-message">Мы не можем отправить вас в прошлое</p>
         <label class="modal-lable" for="date-field-end">
           Дата Выезда
         </label>
-        <input class="modal-date" type="text" name="adult-number" id="date-field-end" value="1 сентября 2023">
+        <input class="modal-date" type="text" name="date-end" id="date-field-end" value="1 сентября 2023">
         <p class="error-message">На эти даты есть свободные номера. Пока есть.</p>
-        <label class="modal-lable" for="addult-number">
+        <label class="modal-lable" for="adult-number">
           Взрослые
         </label>
         <button class="decrease" type="button">
           -
           <span class="visually-hidden">Уменьшить количество взрослых</span>
         </button>
-        <input class="modal-date" type="text" name="kids-number" id="addult-number" value="2">
+        <input class="modal-date" type="text" name="adult-number" id="adult-number" value="2">
         <button class="decrease" type="button">
           +
           <span class="visually-hidden">Увеличить количество взрослых</span>
@@ -191,11 +191,23 @@
         <label class="modal-lable" for="kids-number">
           Дети
         </label>
+        <span class="tooltip">
+            <button class="tooltip-toggle" type="button">
+            <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor"
+         xmlns="http://www.w3.org/2000/svg" alt="внимание">
+              <g clip-path="url(#a)">
+                  <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+              </g>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст
+   которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </svg>
+  </button>
+        </span>
         <button class="decrease" type="button">
           -
           <span class="visually-hidden">Уменьшить количество детей</span>
         </button>
-        <input class="modal-date" type="text" name="date" id="kids-number" value="2">
+        <input class="modal-date" type="text" name="kids-number" id="kids-number" value="2">
         <button class="decrease" type="button">
           +
           <span class="visually-hidden">Увеличить количество детей</span>
