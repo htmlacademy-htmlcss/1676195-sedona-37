@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page">
     <header class="page-header">
@@ -13,7 +15,7 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <span class="visually-hidden"></span>
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link--active navigation-link" href="#">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -24,18 +26,18 @@
         </ul>
         <ul class="user-list">
           <li class="user-item">
-            <a class="user-search" href="#">
+
              <span class="visually-hidden">Поиск по сайту</span>
-            </a>
+            <button class="user-search" type="button"></button>
           </li>
           <li class="user-item">
-            <a class="user-favorite" href="#">
+            <button class="user-favorite" type="button"></button>
               <span class="visually-hidden">Добавить в избранное</span>
               <span class="favorite-number">12</span>
-            </a>
+            </button>
           </li>
           <li class="user-item">
-            <a class="application" href="#" >Хочу сюда</a>
+            <a class="user-application" href="#" >xочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -44,12 +46,14 @@
       <h1 class="visually-hidden">Седона не официальный сайт уютного города</h1>
       <section class="hero">
         <h2 class="visually-hidden">Приглашение посетить Седону</h2>
-        <img class="welcome-images" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону, потому что она круче Гранд Каньона">
+        <img class="welcome-slogan" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону, потому что она круче Гранд Каньона">
       </section>
       <section class="advantages">
-        <h2 class="visually-hidden">Преимущества уютного города Седона</h2>
-        <p class="advantages-slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <div class="advantages-wrapper">
+          <h2 class="visually-hidden">Преимущества уютного города Седона</h2>
+          <p class="advantages-slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок</h3>
