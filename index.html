@@ -10,41 +10,42 @@
   </head>
 
   <body class="page">
-    <header class="page-header">
-      <nav class="navigation">
-        <a class="logo-link">
-          <img class="logo-navigation" src="images/logo.svg" width="140" height="70" alt="Логотип неофициального сайта города Седонаю.">
-        </a>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <span class="visually-hidden"></span>
-            <a class="navigation-link--active navigation-link" href="#">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="user-list">
-          <li class="user-item">
-
-             <span class="visually-hidden">Поиск по сайту</span>
-            <button class="user-search" type="button"></button>
-          </li>
-          <li class="user-item">
-            <button class="user-favorite" type="button"></button>
-              <span class="visually-hidden">Добавить в избранное</span>
-              <span class="favorite-number">12</span>
-            </button>
-          </li>
-          <li class="user-item">
-            <a class="user-application" href="#" >xочу сюда</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <div class="page-container">
+   <header class="page-header">
+    <nav class="navigation">
+      <a class="logo-link">
+        <img class="logo-navigation" src="images/logo.svg" width="140" height="70" alt="Логотип неофициального сайта города Седонаю.">
+      </a>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <span class="visually-hidden"></span>
+          <a class="navigation-link" href="#">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О Седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="user-list">
+        <li class="user-item">
+          <a class="user-search" href="#">
+            <span class="visually-hidden">Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="user-item">
+          <a class="user-favorite" href="#">
+            <span class="visually-hidden">Добавить в избранное</span>
+            <span class="favorite-number">12</span>
+          </a>
+        </li>
+        <li class="user-item">
+          <a class="application" href="#" >Хочу сюда</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
     <main class="main-content">
       <h1 class="visually-hidden">Седона не официальный сайт уютного города</h1>
       <section class="hero">
@@ -252,7 +253,7 @@
           </form>
         </div>
       </div>
-    </div>
+  </div>
   </body>
 
 </html>
