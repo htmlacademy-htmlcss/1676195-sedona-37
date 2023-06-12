@@ -1,18 +1,25 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  background: #f2f2f2;
+}
+
+.page-container {
   margin: 0 auto;
-  width: 1280px;
-  background: #F2F2F2;
+  width: 1200px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
+  margin: 0px;
   border: 0;
   padding: 0;
   white-space: nowrap;
@@ -31,6 +38,8 @@ a {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  padding: 20px 16px;
+  display: block;
  }
 
 .navigation-link--active {
@@ -42,62 +51,61 @@ a {
 }
 
 .page-header{
-  background: #FFFFFF;
-  margin: 0 40px;
-  width: 1200px;
-  height: 64px;
 
-}
-.logo-navigation{
-  margin: 0 44px 0 70px;
-  width: 140px;
-  height: 70px;
-  overflow-clip-margin: content-box;
 }
 
 .navigation{
   display: flex;
+  position: relative;
+  padding-left: 238px;
+  justify-content: space-between;
 }
+
+.logo-link{
+  position: absolute;
+  left: 70px;
+  top: 0;
+}
+
+
 
 .navigation-list{
   list-style: none;
   margin: 0;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   padding: 0;
-  width: 339px;
-  margin-right: 285px;
+  width: 480px;
 }
 
 .navigation-item {
-  margin: 20px 16px;
+
 }
 
 .navigation-item:last-child {
   margin-right: 0;
 }
 
-.navigation-item:first-child {
-  margin-left: 0;
-}
-
 .user-list {
+  padding: 0 62px 0;
+  margin: 0;
   display: flex;
   list-style: none;
   width: 268px;
-
+  justify-content: space-between;
 }
 
 .user-item {
-  margin: 22px 12px;
+  margin: 0;
+  padding: 22px 25px 4px 3px;
 }
 
-.user-item:last-child {
-
+.user-item--application{
+  padding: 14px 25px 12px 3px;
 }
+
 
 .user-search {
-  display: flex;
   align-items: center;
   justify-content: center;
   background-image: url("../images/search.svg");
@@ -106,6 +114,8 @@ a {
   border: 0;
   background-color: transparent;
   background-repeat: no-repeat;
+  display: block;
+
 
 }
 .user-favorite {
@@ -134,8 +144,8 @@ a {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-
 }
+
 .favorite-number {
   display: flex;
   background-color: #7DB54F;
@@ -150,34 +160,32 @@ a {
   line-height: 10px;
   position: absolute;
   z-index: 2;
-  margin-bottom: 33px;
-  margin-top: 11px;
+  margin: -22px -10px 0 0;
+
 }
 
 /* блок Main */
 .main-content {
   background: #FFFFFF;
-  margin: 0 40px;
+  margin: 0;
   width: 1200px;
-  box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* блок Hero   */
 
 .hero {
-  display: flex;
-  background-image: url("../images/index-background.jpg");
-  margin: 0;
-  width: 1200px;
-  background-repeat: no-repeat;
-  margin-top: -2px;
+  background-color: #325b7f;
+  background-image: url("../images/triangle.svg"), url("../images/index-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, center top;
+  background-size: 100% 57px, cover;
+  text-align: center;
+  padding-top: 51px;
+  padding-bottom: 77px;
 }
 
 .welcome-slogan {
-  margin-left: 371px;
-  margin-right: 371px;
-  margin-top: 51px;
-  margin-bottom: 25px;
+
 
 }
 
@@ -193,11 +201,64 @@ a {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
 
-
+.advantages-description {
+  margin: 0;
+  padding: 25px 0 0 0;
 }
 
 .advantages-wrapper {
-  width: 620px;
-  margin: 69px 290px 290px 25px;
+  width: 652px;
+  padding: 69px 276px;
+  margin-bottom: 21px;
+}
+
+.advantages-list{
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.advantages-promo {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+
+}
+
+.advantages-content {
+  width: 400px;
+  background: #82B3D3;
+  color: #ffffff;
+  padding: 102px 85px 0  ;
+
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 30px;
+  text-underline-position: under;
+}
+
+.advantages-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
