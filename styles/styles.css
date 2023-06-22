@@ -604,19 +604,22 @@ a {
 .tooltip-toggle {
   border: none;
   background-color: #83b3d3;
-  padding: 0;
+  display: flex;
   margin: 0;
   display: block;
   width: 26px;
   height: 26px;
   color: #ffffff;
   border-radius: 50%;
+  padding: 3px;
+  align-items: center;
+  justify-content: center;
 }
 
 .tooltip-icon {
   width: 1px;
   height: 9px;
-  color: #83b3d3;
+
   display: block;
 }
 
@@ -648,20 +651,22 @@ a {
 .modal {
   margin: 0;
   display: block;
+  position: relative;
 }
 
 .modal-window {
-  padding: 64px;
+  padding: 64px 70px;
   width: 717px;
   z-index: 1;
   content: "";
   position: absolute;
-  left: 50vh;
-  transform: translateY(-50vh);
+  left: 20%;
+  transform: translateY(-150%);
   display: none;
+
   background-color: #Ffffff;
   border-radius: 30px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
 .search-button:hover + .modal-window,
