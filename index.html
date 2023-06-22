@@ -20,13 +20,13 @@
           <ul class="navigation-list">
             <li class="navigation-item">
               <span class="visually-hidden"></span>
-              <a class="navigation-link" href="#">Главная</a>
+              <a class="navigation-link navigation-link--active" href="#">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Гостиницы</a>
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="user-list">
@@ -42,7 +42,7 @@
               </a>
             </li>
             <li class="user-item user-item--application">
-              <a class="user-application" href="#">Хочу сюда</a>
+              <button class="user-button">Хочу сюда!</button>
             </li>
           </ul>
         </nav>
@@ -121,25 +121,31 @@
           </ul>
         </section>
         <section class="search">
-          <h2 class="visually-hidden">Здесь можно найти гостинницу вашей мечты</h2>
-          <h2 class="search-title">Заинтересовались?</h2>
-          <p class="search-description">
-            Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
-          </p>
-          <a class="search-link" href="#">Поиск гостиницы в Cедоне</a>
+          <div class="search-wrapper">
+            <h2 class="visually-hidden">Здесь можно найти гостинницу вашей мечты</h2>
+            <h2 class="search-title">Заинтересовались?</h2>
+            <p class="search-description">
+              <span class="text-wrap">Укажите предполагаемые даты поездки,</span><span class="text-nowrap"> и мы покажем вам лучшие предложения гостиниц в Седоне</span>
+            </p>
+            <button class="search-button">Поиск гостиницы в Cедоне</button>
+          </div>
         </section>
       </main>
       <footer class="footer">
         <section class="subscribe">
-          <h2>Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <div class="subscribe-form">
-            <form id="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input name="email" required type="email" class="subscribe-form-email" placeholder="ваш email">
+          <div class="subscribe-wrapper">
+             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+             <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          </div>
+            <div class="subscribe-form">
+            <form  action="https://echo.htmlacademy.ru/" method="post">
+              <input name="email" required type="email" class="subscribe-form-email" placeholder="Ваш email">
               <button class="feedback-form-button" type="submit">Подписаться</button>
             </form>
           </div>
+
         </section>
+
         <section class="contacts">
           <h2 class="visually-hidden">Контакты города Седона</h2>
           <ul class="contact-items">
@@ -230,13 +236,13 @@
               Дети
             </label>
             <span class="tooltip">
-              <button class="tooltip-toggle" type="button">
-                <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#a)">
-                    <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
-                  </g>
-                </svg>
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                   <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#a)">
+                        <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                      </g>
+                    </svg>
               </button>
               <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
                 Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
