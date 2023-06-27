@@ -20,13 +20,13 @@
           <ul class="navigation-list">
             <li class="navigation-item">
               <span class="visually-hidden"></span>
-              <a class="navigation-link" href="#">Главная</a>
+              <a class="navigation-link navigation-link--active" href="#">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Гостиницы</a>
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="user-list">
@@ -42,7 +42,7 @@
               </a>
             </li>
             <li class="user-item user-item--application">
-              <a class="user-application" href="#">Хочу сюда</a>
+              <button class="user-button">Хочу сюда!</button>
             </li>
           </ul>
         </nav>
@@ -77,7 +77,8 @@
             </li>
             <li class="advantages-item">
               <h3 class="advantages-title">Красивая дорога</h3>
-              <p class="advantages-text"><span class="text-nowrap">Ехать в Седону из Лас-Вегаса </span> совсем не скучно!</p>
+              <p class="advantages-text"><span class="text-nowrap">Ехать в Седону из Лас-Вегаса </span> совсем не
+                скучно!</p>
             </li>
             <li class="advantages-item">
               <h3 class="advantages-title">Мало туристов</h3>
@@ -98,47 +99,48 @@
             <h2 class="visually-hidden">Сервис который может предоставить город</h2>
             <h2 class="service-slogan">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
             <p class="service-description">Опытный персонал и качественное обслуживание!
-          </p>
+            </p>
           </div>
           <ul class="service-list">
             <li class="service-item  service-housing">
               <h3 class="service-title">Жильё</h3>
               <p class="service-text">
-                Рекомендуем пожить <span class="text-nowrap">в настоящем мотеле,</span> <span class="text-nowrap">всё как в кино!</span>
+                Рекомендуем пожить в&nbsp;настоящем&nbsp;мотеле, всё&nbsp;как&nbsp;в кино!
               </p>
             </li>
             <li class="service-item service-food">
               <h3 class="service-title">Еда</h3>
               <p class="service-text">
-                <span class="text-nowrap">Всегда заказывайте</span> <span class="text-nowrap">топовый фирменный бургер,</span> вы не разочаруетесь!
+               Всегда заказывайте топовый&nbsp;фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!
               </p>
             </li>
             <li class="service-item service-souvenir">
               <h3 class="service-title">Сувениры</h3>
-              <p class="service-text">
-                <span class="text-nowrap">Не только китайского,</span> <span class="text-nowrap"> но и настоящего местного</span> производства!</p>
+              <p class="service-text">Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
             </li>
           </ul>
         </section>
         <section class="search">
-          <h2 class="visually-hidden">Здесь можно найти гостинницу вашей мечты</h2>
-          <h2 class="search-title">Заинтересовались?</h2>
-          <p class="search-description">
-            Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
-          </p>
-          <a class="search-link" href="#">Поиск гостиницы в Cедоне</a>
+          <div class="search-wrapper">
+            <h2 class="visually-hidden">Здесь можно найти гостинницу вашей мечты</h2>
+            <h2 class="search-title">Заинтересовались?</h2>
+            <p class="search-description">
+             Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне
+            </p>
+            <a class="search-button" href="#">Поиск гостиницы в Cедоне</a>
+          </div>
         </section>
       </main>
       <footer class="footer">
         <section class="subscribe">
-          <h2>Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <div class="subscribe-form">
-            <form id="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input name="email" required type="email" class="subscribe-form-email" placeholder="ваш email">
-              <button class="feedback-form-button" type="submit">Подписаться</button>
-            </form>
+          <div class="subscribe-wrapper">
+            <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+            <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           </div>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="subscribe-form-email" name="email" required type="email" placeholder="Ваш e-mail">
+            <button class="feedback-form-button" type="submit">Подписаться</button>
+          </form>
         </section>
         <section class="contacts">
           <h2 class="visually-hidden">Контакты города Седона</h2>
@@ -177,8 +179,10 @@
               </ul>
             </li>
             <li class="contact-item">
-              <span class="visually-hidden">Ноемер телефона для связи</span>
-              <a class="contact-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+              <div class="link-wrapper">
+                <span class="visually-hidden">Ноемер телефона для связи</span>
+                <a class="contact-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+              </div>
             </li>
             <li class="contact-item">
               <a class="contact-link" href="htmlacademy.ru">
@@ -201,63 +205,80 @@
       </footer>
       <div class="modal">
         <div class="modal-window">
+          <div class="modal-header">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <button class="modal-close" type="button">
             <span class="visually-hidden">Закрыть модальное окно</span>
           </button>
+          </div>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="modal-label" for="date-field">Дата Заезда</label>
-            <input class="modal-date" type="text" name="date-start" id="date-field" value="27 апреля 2020">
+            <div class="form-wrapper">
+                <label class="modal-label" for="date-field">Дата Заезда</label>
+                <input class="modal-date modal-date-went" type="text" name="date-start" id="date-field" value="27 апреля 2020">
+            </div>
             <p class="error-message">Мы не можем отправить вас в прошлое</p>
-            <label class="modal-label" for="date-field-end">
+            <div class="form-wrapper">
+                <label class="modal-label" for="date-field-end">
               Дата Выезда
-            </label>
-            <input class="modal-date" type="text" name="date-end" id="date-field-end" value="1 сентября 2023">
-            <p class="error-message">На эти даты есть свободные номера. Пока есть.</p>
-            <label class="modal-label" for="adult-number">
-              Взрослые
-            </label>
-            <button class="decrease" type="button">
-              -
-              <span class="visually-hidden">Уменьшить количество взрослых</span>
-            </button>
-            <input class="modal-date" type="text" name="adult-number" id="adult-number" value="2">
-            <button class="decrease" type="button">
-              +
-              <span class="visually-hidden">Увеличить количество взрослых</span>
-            </button>
-            <label class="modal-label" for="kids-number">
-              Дети
-            </label>
-            <span class="tooltip">
-              <button class="tooltip-toggle" type="button">
-                <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#a)">
-                    <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
-                  </g>
-                </svg>
-              </button>
-              <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
-                Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
-                размещаются
-                бесплатно.
-              </span>
-            </span>
-            <button class="decrease" type="button">
-              -
-              <span class="visually-hidden">Уменьшить количество детей</span>
-            </button>
-            <input class="modal-date" type="text" name="kids-number" id="kids-number" value="2">
-            <button class="decrease" type="button">
-              +
-              <span class="visually-hidden">Увеличить количество детей</span>
-            </button>
-            <button class="find" type="submit">Найти</button>
+                </label>
+                <input class="modal-date  modal-date-went" type="text" name="date-end" id="date-field-end" value="1 сентября 2023">
+            </div>
+            <p class="okay-message">На эти даты есть свободные номера. Пока есть.</p>
+            <div class="form-wrapper form-wrapper-count">
+                <div class="adult-wrapper">
+                  <label class="modal-label" for="adult-number">
+                    Взрослые
+                  </label>
+                  <div class="button-wrapper">
+                      <button class="decrease decrease-minus" type="button">
+                          <span class="visually-hidden">Уменьшить количество взрослых</span>
+                        </button>
+                      <input class="modal-count" type="text" name="adult-number" id="adult-number" value="2">
+                      <button class="decrease decrease-plus" type="button">
+                          <span class="visually-hidden">Увеличить количество взрослых</span>
+                      </button>
+                  </div>
+                </div>
+                <div class="kids-wrapper">
+                  <label class="modal-label" for="kids-number">
+                    Дети
+                  </label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#a)">
+                      <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                    </g>
+                  </svg>
+                  </button>
+                    <span class="tooltip-text-container">
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                    размещаются
+                    бесплатно.
+                  </span>
+                </span>
+                  </span>
+                  <div class="kids-wrapper">
+                    <div class="button-wrapper">
+                      <button class="decrease decrease-minus" type="button">
+                          <span class="visually-hidden">Уменьшить количество детей</span>
+                        </button>
+                      <input class="modal-count" type="text" name="kids-number" id="kids-number" value="2">
+                      <button class="decrease decrease-plus" type="button">
+                            <span class="visually-hidden">Увеличить количество детей</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <button class="modal-find" type="submit">Найти</button>
           </form>
         </div>
       </div>
     </div>
+    <script src="./script/script.js"></script>
   </body>
 
 </html>
