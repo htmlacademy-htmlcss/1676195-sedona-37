@@ -40,7 +40,7 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: 0;
+  margin: -1;
   border: 0;
   padding: 0;
   white-space: nowrap;
@@ -958,7 +958,7 @@ a {
 .filter-header {
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .filter-title {
@@ -1015,7 +1015,7 @@ a {
   text-transform: capitalize;
   margin: 0;
   padding: 0;
-  margin-bottom: 32px;
+  margin-bottom: 23px;
 }
 
 .filter-group-wrapper {
@@ -1048,8 +1048,11 @@ a {
   height: 20px;
   margin-right: 12px;
   border-radius: 4px;
+  background-image: url("../images/checkbox.svg");
 }
-
+.infra-box:checked{
+  background-image: url("../images/checkbox-checked.svg");
+}
 
 .infra-items {
   margin-bottom: 12px;
@@ -1072,8 +1075,7 @@ a {
   margin: 0;
   padding: 0;
   min-width: 160px;
-  margin-right: 70px;
-  ;
+  margin-right: 115px;
 }
 
 .house-box {
@@ -1099,6 +1101,7 @@ a {
 
 .filter-price {
   border: none;
+  margin-right: 52px;
 }
 
 .price-container {
@@ -1110,6 +1113,10 @@ a {
 }
 
 .min-price-input {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: inherit;
+  padding: 12px 20px;
   width: 143px;
   height: 48px;
   border-radius: 4px;
@@ -1118,6 +1125,10 @@ a {
 }
 
 .max-price-input {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: inherit;
+  padding: 12px 20px;
   width: 143px;
   height: 48px;
   border-radius: 4px;
@@ -1153,7 +1164,7 @@ a {
   border-top: 4px solid rgba(255, 255, 255, 0.3);
   position: absolute;
   left: 0;
-  top: 8px;
+  top: 11px;
   z-index: 1;
 }
 
@@ -1198,7 +1209,7 @@ a {
 
 .button-show {
   display: inline-block;
-  padding: 7px 50px;
+  padding: 7px;
   font-weight: 700;
   line-height: 20px;
   font-size: 16px;
@@ -1211,7 +1222,8 @@ a {
   cursor: pointer;
   margin: 0;
   border-radius: 4px;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
+  min-width: 191px;
 }
 
 .button-show:hover {
@@ -1266,7 +1278,7 @@ a {
 .gallery-select {
   display: flex;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   justify-content: space-between;
   padding-top: 7px;
 }
@@ -1343,11 +1355,11 @@ a {
 .cards {
   display: grid;
   grid-template-columns: 340px 340px 340px;
-  gap: 16px;
+  gap: 20px;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 20px;
+  margin-bottom: 81px;
 }
 
 .card {
@@ -1361,7 +1373,7 @@ a {
 
 .cards-images {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .cards-title {
@@ -1390,12 +1402,12 @@ a {
 
 .cards-sellect {
   display: flex;
-
 }
+
 
 .cards-more {
   display: inline-block;
-  padding: 7px 50px;
+  padding: 8px 8px;
   font-weight: 700;
   line-height: 20px;
   font-size: 16px;
@@ -1407,9 +1419,9 @@ a {
   border: none;
   cursor: pointer;
   margin: 0;
+  width:140px;
   margin-right: 20px;
   border-radius: 4px;
-  height: 36px;
 }
 
 .cards-more:focus {
@@ -1417,12 +1429,12 @@ a {
 }
 
 .cards-more:active {
-  color: rgba(255, 255, 255, 0.30));
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .button-favorite {
   display: inline-block;
-  padding: 7px 50px;
+  padding: 8px 8px;
   font-weight: 700;
   line-height: 20px;
   font-size: 16px;
@@ -1434,17 +1446,105 @@ a {
   border: none;
   cursor: pointer;
   margin: 0;
-
   border-radius: 4px;
-
+  width:140px
 }
+
 
 .button-favorite:focus {
   background-color: #68A2CA;
 }
 
 .button-favorit:active {
-  color: rgba(255, 255, 255, 0.30));
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.button-favorite.add {
+  background-color: #7db54f;
+}
+
+.card-raiting {
+  display: flex;
+}
+
+.x-stars {
+  margin: 0 0 1em 0;
+  padding: 0;
+  border: none;
+}
+.stars-group {
+  position: relative;
+  width: 73px;
+  height: 17px;
+  background-image: url("../images/star.svg");
+  background-size: 18px 17px;
+}
+.mark-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 2em;
+
+  appearance: none;
+}
+.mark-stars:nth-of-type(1){
+  width: 18px;
+}
+.mark-stars:nth-of-type(2){
+  width: 36px;
+}
+
+.mark-stars:nth-of-type(3){
+  width: 54px;
+}
+
+.mark-stars:nth-of-type(4){
+  width: 68px;
+}
+
+.stars {
+  display: inline-block;
+  padding: 8px 8px;
+  margin: 0;
+  margin-right: 20px;
+  background-image: url("../images/star.svg");
+  background-size: 17px 18px;
+  width:140px;
+
+}
+
+.stars.stars-four {
+  display: flex;
+  background-color: transparent;
+  background-repeat: repeat-x;
+  width:54px;
+}
+
+.stars.stars-two {
+  display: flex;
+  background-color: transparent;
+  background-repeat: repeat-x;
+  width:20px;
+}
+
+
+
+.rating-title {
+  display: inline-block;
+  padding: 8px 8px;
+  color: #333333;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 16px;
+  font-family: inherit;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  text-align: center;
+  border: none;
+  margin: 0;
+  border-radius: 4px;
+  width:140px
 }
 
 /*__________________________*/

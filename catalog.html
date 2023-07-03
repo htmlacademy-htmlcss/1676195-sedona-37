@@ -13,9 +13,9 @@
     <div class="page-container">
       <header class="page-header">
         <nav class="navigation">
-          <a class="logo-link" href="index.html">
+          <a class="logo-link">
             <img class="logo-navigation" src="images/logo.svg" width="140" height="70"
-              alt="Логотип неофициального сайта города Седонаю.">
+                 alt="Логотип неофициального сайта города Седонаю.">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -26,7 +26,7 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link--active" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link navigation-link--active" href="#">Гостиницы</a>
             </li>
           </ul>
           <ul class="user-list">
@@ -42,7 +42,7 @@
               </a>
             </li>
             <li class="user-item user-item--application">
-              <button class="user-button" href="#">Хочу сюда!</button>
+              <a href="#" class="user-button">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -129,9 +129,7 @@
               <button class="button-drop" type="reset">Сбросить</button>
             </div>
           </form>
-
         </section>
-
         <section class="gallery">
           <h2 class="visually-hidden">Галерея отелей</h2>
           <section class="gallery-select">
@@ -169,12 +167,19 @@
                   <a class="cards-more" href="#">Подробнее</a>
                   <a class="button-favorite">В избранное</a>
                 </div>
-                <div class="stars stars-four">
-                  <span class="visually-hidden">четыре звезды</span>
+                <div class="card-raiting">
+                  <fieldset class="x-stars">
+                    <div class="stars-group">
+                        <input class="mark-stars" type="radio" name="mystars" aria-label="неплохот">
+                        <input class="mark-stars" type="radio" name="mystars" aria-label="нормально">
+                        <input class="mark-stars" type="radio" name="mystars" aria-label="хорошо">
+                        <input class="mark-stars" type="radio" name="mystars" aria-label="отлично">
+                    </div>
+                  <span class="rating-title">
+                      Рейтинг: 8,5
+                  </span>
+                  </fieldset>
                 </div>
-                <span class="rating-title">
-                  Рейтинг: 8,5
-                </span>
               </li>
               <li class="card">
                 <img class="cards-images" src="images/catalog/hotel-2.jpg" width="300" height="212"
@@ -186,14 +191,16 @@
                 </div>
                 <div class="cards-sellect">
                   <a class="cards-more" href="#">Подробнее</a>
-                  <a class="button-favorite" href="#">В избранное</a>
+                  <a class="button-favorite add" href="#">В избранноm</a>
                 </div>
-                <div class="stars stars-four">
+                <div class="card-raiting">
+                   <div class="stars stars-four">
                   <span class="visually-hidden">четыре звезды</span>
                 </div>
-                <span class="rating-title">
+                    <span class="rating-title">
                   Рейтинг: 9,2
                 </span>
+                </div>
               </li>
               <li class="card">
                 <img class="cards-images" src="images/catalog/hotel-3.jpg" width="300" height="212"
@@ -207,12 +214,14 @@
                   <a class="cards-more" type="submit">Подробнее</a>
                   <a class="button-favorite" type="submit">В избранное</a>
                 </div>
-                <div class="stars stars-three">
+                <div class="card-raiting">
+                   <div class="stars stars-three">
                   <span class="visually-hidden">три звезды</span>
                 </div>
-                <span class="rating-title">
+                   <span class="rating-title">
                   Рейтинг: 6,9
                 </span>
+                </div>
               </li>
               <li class="card">
                 <img class="cards-images" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
@@ -225,12 +234,14 @@
                   <a class="cards-more" type="submit">Подробнее</a>
                   <a class="button-favorite" type="submit">В избранное</a>
                 </div>
-                <div class="stars stars-two">
+                <div class="card-raiting">
+                  <div class="stars stars-two">
                   <span class="visually-hidden">две звезды</span>
                 </div>
-                <span class="rating-title">
-                  Рейтинг: 5,0
-                </span>
+                  <span class="rating-title">
+                       Рейтинг: 5,0
+                  </span>
+                </div>
               </li>
             </ul>
           </section>
