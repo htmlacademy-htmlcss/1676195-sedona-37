@@ -50,40 +50,34 @@
       <main class="main-catalog">
         <h1 class="visually-hidden">Седона не официальный сайт уютного города</h1>
         <section class="filter-content">
-          <div class="filter-header">
+          <header class="filter-header">
             <h1 class="filter-title">Гостиницы Седоны</h1>
-            <ul class="catalogpoint">
-              <li class="catalogpoint-item">
-                <a class="catalogpoint-link" href="index.html">
-                  <span class="visually-hidden">вернуться на главную</span>
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link home-link" href="index.html">
+                  <span class="visually-hidden">Главная</span>
                 </a>
               </li>
-              <li class="catalogpoint-item">
-                <a class="catalogpoint-link" href="#">
-                  <span class="visually-hidden">развернуть каталог</span>
-                </a>
-              </li>
-              <li class="catalogpoint-item">
-                <a class="catalogpoint-link">Гостиницы</a>
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link">Гостиницы</a>
               </li>
             </ul>
-          </div>
-
+          </header>
           <form class="catalog-filter-group" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter-infra">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="infra-list">
                 <li class="infra-items">
-                  <input class="infra-box" type="checkbox" id="infra-bass" name="bass">
-                  <label class="checkbox-label" for="infra-bass">Бассейн</label>
+                  <input class="visually-hidden checkbox-input" type="checkbox" id="infra-bass" name="bass">
+                  <label class="infra-checkbox-label" for="infra-bass">Бассейн</label>
                 </li>
                 <li class="infra-items">
-                  <input class="infra-box" type="checkbox" id="infra-parking" name="parking">
-                  <label class="checkbox-label" for="infra-parking">Парковка</label>
+                  <input class="visually-hidden checkbox-input" type="checkbox" id="infra-parking" name="parking">
+                  <label class="infra-checkbox-label" for="infra-parking">Парковка</label>
                 </li>
                 <li class="infra-items">
-                  <input class="infra-box" type="checkbox" id="infra-wifi" name="wifi">
-                  <label class="checkbox-label" for="infra-wifi">wi-fi</label>
+                  <input class="visually-hidden checkbox-input" type="checkbox" id="infra-wifi" name="wifi">
+                  <label class="infra-checkbox-label" for="infra-wifi">wi-fi</label>
                 </li>
               </ul>
             </fieldset>
@@ -91,21 +85,21 @@
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul class="house-list">
                 <li class="house-items">
-                  <input class="house-box" type="radio" id="house-hotel" name="hotel">
-                  <label class="checkbox-label" for="house-hotel">Гостиница</label>
+                  <input class="visually-hidden checkbox-input" type="radio" id="house-hotel" name="hotel">
+                  <label class="house-checkbox-label" for="house-hotel">Гостиница</label>
                 </li>
                 <li class="house-items">
-                  <input class="house-box" type="radio" id="house-motel" name="motel">
-                  <label class="checkbox-label" for="house-motel">Мотель</label>
+                  <input class="visually-hidden checkbox-input" type="radio" id="house-motel" name="motel">
+                  <label class="house-checkbox-label" for="house-motel">Мотель</label>
                 </li>
                 <li class="house-items">
-                  <input class="house-box" type="radio" id="house-apartment" name="apartment">
-                  <label class="checkbox-label" for="house-apartment">Апартаменты</label>
+                  <input class="visually-hidden checkbox-input" type="radio" id="house-apartment" name="apartment">
+                  <label class="house-checkbox-label" for="house-apartment">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filter-price">
-              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <legend class="catalog-filter-title filter-title-inline">Стоимость, ₽:</legend>
               <div class="price-container">
                 <input class="min-price-input" type="text" id="min-price" name="min-price" value="0">
                 <label for="min-price" class="min-price-label price-label">от</label>
@@ -168,17 +162,12 @@
                   <a class="button-favorite">В избранное</a>
                 </div>
                 <div class="card-raiting">
-                  <fieldset class="x-stars">
-                    <div class="stars-group">
-                        <input class="mark-stars" type="radio" name="mystars" aria-label="неплохот">
-                        <input class="mark-stars" type="radio" name="mystars" aria-label="нормально">
-                        <input class="mark-stars" type="radio" name="mystars" aria-label="хорошо">
-                        <input class="mark-stars" type="radio" name="mystars" aria-label="отлично">
-                    </div>
+                  <div class="stars stars-four">
+                    <span class="visually-hidden">три звезды</span>
+                  </div>
                   <span class="rating-title">
-                      Рейтинг: 8,5
+                    Рейтинг: 8,5
                   </span>
-                  </fieldset>
                 </div>
               </li>
               <li class="card">

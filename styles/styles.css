@@ -40,7 +40,7 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1;
+  margin: -1px;
   border: 0;
   padding: 0;
   white-space: nowrap;
@@ -139,7 +139,7 @@ a {
   align-items: center;
   justify-content: center;
   background-image: url("../images/harts.svg");
-  width: 20px;
+  width: 25px;
   height: 20px;
   border: 0;
   background-repeat: no-repeat;
@@ -319,10 +319,6 @@ a {
 
 .text-nowrap {
   white-space: nowrap;
-}
-
-.text-wrap {
-  white-space: break-spaces;
 }
 
 .advantages-image {
@@ -594,7 +590,7 @@ a {
 
 .contact-items {
   margin: 0;
-  padding: 45px 71px;
+  padding: 44px 71px;
   list-style: none;
   display: flex;
   align-items: center;
@@ -943,22 +939,19 @@ a {
 
 
 .filter-content {
+  color: #ffffff;
   background-color: #82B3D3;
   background-image: url("../images/filter-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
-  padding: 35px 70px 61px 70px;
-  color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding: 35px 70px 58px;
 }
 
 .filter-header {
   margin: 0;
   padding: 0;
-  margin-bottom: 33px;
+  margin-bottom: 40px;
 }
 
 .filter-title {
@@ -967,45 +960,55 @@ a {
   line-height: 78px;
   margin: 0;
   margin-bottom: 8px;
+  text-transform: capitalize
 }
 
-.catalogpoint {
+.breadcrumbs {
   display: flex;
   margin: 0;
-  padding: 0;
   list-style: none;
-  gap: 10px;
-  align-items: center;
+  padding: 0;
 }
 
-.catalogpoint-item {
-  margin: 0;
+.breadcrumbs-item {
+  display: flex;
+  position: relative;
+  padding-right: 15px;
+  margin-right: 11px;
 }
 
-.catalogpoint-item:first-child {
+.breadcrumbs-item::before {
+  content: "";
+  width: 7px;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  top: 6px;
+  background: url("../images/row-left.svg") no-repeat 0 0;
+}
+
+.breadcrumbs-item:last-child::before {
+  display: none;
+}
+
+.breadcrumbs-link {
+  color: #f2f2f2;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.home-link {
   background-image: url("../images/home-catalog.svg");
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-  width: 13px;
-  height: 22px;
-  cursor: pointer;
-}
-
-.catalogpoint-item:nth-last-child(2) {
-  background-image: url("../images/row-left.svg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-  width: 11px;
-  height: 22px;
-  cursor: pointer;
-}
-
-.catalogpoint-link {
-  font-size: 16px;
-  color: #ffffff;
-  line-height: 21px;
+  background-position: center;
+  width: 18px;
+  height: 18px;
+  display: block;
+  margin-left: -3px;
+  margin-top: 2px;
 }
 
 .catalog-filter-title {
@@ -1015,7 +1018,12 @@ a {
   text-transform: capitalize;
   margin: 0;
   padding: 0;
+  margin-bottom: 33px;
+}
+
+.filter-title-inline {
   margin-bottom: 23px;
+
 }
 
 .filter-group-wrapper {
@@ -1048,26 +1056,95 @@ a {
   height: 20px;
   margin-right: 12px;
   border-radius: 4px;
-  background-image: url("../images/checkbox.svg");
+
 }
 .infra-box:checked{
   background-image: url("../images/checkbox-checked.svg");
 }
 
 .infra-items {
-  margin-bottom: 12px;
   font-size: 18px;
   font-family: inherit;
   line-height: 23px;
+  margin-bottom: 16px;
 }
 
 .infra-items:last-child {
   text-transform: capitalize;
 }
 
-.checkbox-label {
-  margin: 0;
-  padding: 0;
+.infra-checkbox-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 36px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  cursor: pointer;
+}
+
+.infra-checkbox-label::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  left: 0;
+  top: 0;
+}
+
+.infra-checkbox-label::after {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 5px;
+  border-left: 2px solid #3f5e72;
+  border-bottom: 2px solid #3f5e72;
+  transform: rotate(-45deg);
+  left: 3px;
+  top: 5px;
+  display: none;
+}
+
+.checkbox-input:checked + .infra-checkbox-label::after {
+  display: block;
+}
+
+.house-checkbox-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 36px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  cursor: pointer;
+
+}
+.house-checkbox-label::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  left: 0;
+  top: 0;
+}
+
+.house-checkbox-label::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+  left: 5px;
+  top: 5px;
+  display: none;
+}
+.checkbox-input:checked + .house-checkbox-label::after {
+  display: block;
 }
 
 .filter-house {
@@ -1093,7 +1170,7 @@ a {
 }
 
 .house-items {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   font-size: 18px;
   font-family: inherit;
   line-height: 23px;
@@ -1278,9 +1355,9 @@ a {
 .gallery-select {
   display: flex;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 38px;
   justify-content: space-between;
-  padding-top: 7px;
+
 }
 
 .select-title {
@@ -1290,16 +1367,21 @@ a {
   line-height: 36px;
   margin: 0;
   padding: 0;
+  padding-top: 6px;
+  margin-right: 135px;
 }
 
 .gallery-select-control {
   border-radius: 4px;
+  font-family: inherit;
   border: 2px solid #E5E5E5;
-  padding: 14px 131px 20px 14px;
+  padding: 10px 0 15px 12px;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   cursor: pointer;
+  width: 292px;
+  height: 49px;
 }
 
 .gallery-select-control:hover {
@@ -1315,16 +1397,16 @@ a {
   min-width: 160px;
   margin: 0;
   padding: 0;
+  gap: 8px;
   justify-content: space-around;
 }
 
 .gallery-view {
   border-radius: 4px;
-  border: 2px solid #e5e5e5;
   margin: 0;
   padding: 12px;
   width: 48px;
-  height: 48px;
+  height: 46px;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -1356,16 +1438,18 @@ a {
   display: grid;
   grid-template-columns: 340px 340px 340px;
   gap: 20px;
+  row-gap: 19px;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 81px;
+  margin-bottom: 78px;
 }
 
 .card {
   width: 340px;
   min-height: 438px;
   padding: 20px;
+  padding-bottom: 17px;
   border-radius: 4px;
   border: 1px solid #aaaaaa;
   box-sizing: border-box;
@@ -1402,6 +1486,7 @@ a {
 
 .cards-sellect {
   display: flex;
+  margin-bottom: 17px;
 }
 
 
@@ -1465,74 +1550,43 @@ a {
 
 .card-raiting {
   display: flex;
+  justify-content: space-between;
 }
 
-.x-stars {
-  margin: 0 0 1em 0;
-  padding: 0;
-  border: none;
-}
-.stars-group {
-  position: relative;
-  width: 73px;
-  height: 17px;
-  background-image: url("../images/star.svg");
-  background-size: 18px 17px;
-}
-.mark-stars {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 18px;
-  height: 2em;
 
-  appearance: none;
-}
-.mark-stars:nth-of-type(1){
-  width: 18px;
-}
-.mark-stars:nth-of-type(2){
-  width: 36px;
-}
-
-.mark-stars:nth-of-type(3){
-  width: 54px;
-}
-
-.mark-stars:nth-of-type(4){
-  width: 68px;
-}
 
 .stars {
-  display: inline-block;
-  padding: 8px 8px;
+  padding: 7px 8px;
   margin: 0;
   margin-right: 20px;
   background-image: url("../images/star.svg");
-  background-size: 17px 18px;
-  width:140px;
+  background-size: 18px 17px;
+  background-repeat: space;
+  background-position-y: center;
+  height: 17px;
+
 
 }
 
-.stars.stars-four {
+
+.stars-two {
   display: flex;
-  background-color: transparent;
-  background-repeat: repeat-x;
-  width:54px;
+  width: 25px;
 }
 
-.stars.stars-two {
+.stars-three {
   display: flex;
-  background-color: transparent;
-  background-repeat: repeat-x;
-  width:20px;
+  width: 51px;
 }
 
-
+.stars-four {
+  display: flex;
+  width:73px;
+}
 
 .rating-title {
   display: inline-block;
-  padding: 8px 8px;
+  padding: 8px 0 8px 2px;
   color: #333333;
   font-weight: 400;
   line-height: 20px;
@@ -1544,7 +1598,9 @@ a {
   border: none;
   margin: 0;
   border-radius: 4px;
-  width:140px
+  width: 140px;
+  min-height: 37px;
+  box-sizing: border-box;
 }
 
 /*__________________________*/
