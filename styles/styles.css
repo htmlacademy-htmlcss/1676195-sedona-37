@@ -58,10 +58,7 @@ body {
 }
 
 /*   header */
-a {
-  text-decoration: none;
-  color: #000000;
-}
+
 
 .navigation-link {
   font-size: 20px;
@@ -69,6 +66,8 @@ a {
   line-height: 24px;
   padding: 20px 16px;
   display: block;
+  text-decoration: none;
+  color: #000000;
 }
 
 .navigation-link--active {
@@ -189,6 +188,8 @@ a {
   text-align: center;
   padding: 8px 8px;
   font-weight: 700;
+  text-decoration: none;
+
 }
 
 .user-button:hover {
@@ -530,6 +531,7 @@ a {
   width: 376px;
   cursor: pointer;
   border-radius: 4px;
+  text-decoration: none;
 }
 
 .search-button:hover {
@@ -667,6 +669,7 @@ a {
   line-height: 44px;
   text-transform: uppercase;
   color: #000000;
+  text-decoration: none;
 }
 
 .contact-link:hover{
@@ -1705,6 +1708,12 @@ a {
   line-height: 28px;
   margin: 0;
   margin-bottom: 16px;
+  text-decoration: none;
+}
+
+.card-link {
+  text-decoration: none;
+  color: #333333;
 }
 
 .card-price {
@@ -1752,6 +1761,7 @@ a {
   width:140px;
   margin-right: 20px;
   border-radius: 4px;
+  text-decoration: none;
 }
 
 .cards-more:focus {
@@ -1777,7 +1787,8 @@ a {
   cursor: pointer;
   margin: 0;
   border-radius: 4px;
-  width:140px
+  width:140px;
+  text-decoration: none;
 }
 
 
@@ -1893,6 +1904,7 @@ a {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .pagination-link:active {
