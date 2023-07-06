@@ -555,7 +555,7 @@ a {
   padding-top: 96px;
   padding-bottom: 104px;
   color: #ffffff;
-  background-image: url("../images/subscribe.jpg");
+  background-image: url("../images/scribe.jpg");
 }
 
 
@@ -1170,7 +1170,6 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-
 .home-link {
   background-image: url("../images/home-catalog.svg");
   background-repeat: no-repeat;
@@ -1200,7 +1199,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0;
@@ -1857,6 +1855,7 @@ a {
 }
 
 /*______pagination _______*/
+
 .pagination {
   margin: 0;
   padding: 0;
