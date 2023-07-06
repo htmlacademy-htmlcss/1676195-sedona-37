@@ -555,7 +555,7 @@ a {
   padding-top: 96px;
   padding-bottom: 104px;
   color: #ffffff;
-  background-image: url("../images/");
+  background-image: url("../images/scribe.jpg");
 }
 
 
@@ -1200,7 +1200,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: -webkit-fit-content;
+
   width: -moz-fit-content;
   width: fit-content;
   margin: 0;
