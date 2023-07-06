@@ -4,8 +4,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
   </head>
@@ -102,18 +100,18 @@
             <fieldset class="filter-price">
               <legend class="catalog-filter-title filter-title-inline">Стоимость, ₽:</legend>
               <div class="price-container">
-                <input class="min-price-input" type="text" id="min-price" name="min-price" value="0">
+                <input class="min-price-input" type="text" required id="min-price" name="min-price" value="0">
                 <label for="min-price" class="min-price-label price-label">от</label>
-                <input class="max-price-input" type="text" name="max-price" id="max-price" value="9000">
+                <input class="max-price-input" type="text" required name="max-price" id="max-price" value="9000">
                 <label for="max-price" class="max-price-label price-label">до</label>
               </div>
               <div class="range-container">
                 <div class="range-scale">
                   <div class="range"></div>
-                  <button class="handle-price handle-price--min">
+                  <button class="handle-price handle-price--min" type="button">
                     <span class="visually-hidden">Установить минимальное значение цены</span>
                   </button>
-                  <button class="handle-price handle-price--max">
+                  <button class="handle-price handle-price--max" type="button">
                     <span class="visually-hidden">Установить максимальное значение цены</span>
                   </button>
                 </div>

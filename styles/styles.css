@@ -205,7 +205,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #7DB54F;
+  background-color: #7db54f;
   min-width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -234,7 +234,7 @@ body {
 /* блок Hero   */
 
 .hero {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   background-image: url("../images/triangle.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: left bottom, center top;
@@ -313,7 +313,7 @@ body {
 
 .advantages-content {
   width: 400px;
-  background: #82B3D3;
+  background: #82b3d3;
   color: #ffffff;
   padding: 102px 85px 102px;
 }
@@ -552,12 +552,14 @@ body {
 }
 
 .subscribe {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   margin: 0;
   padding-top: 96px;
   padding-bottom: 104px;
   color: #ffffff;
   background-image: url("../images/scribe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -697,7 +699,7 @@ body {
 }
 
 .social-icon {
-  fill: #83B3D3;
+  fill: #83b3d3;
 }
 
 .social-icon:hover {
@@ -1094,7 +1096,7 @@ body {
 
 .filter-content {
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   background-image: url("../images/filter-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1598,7 +1600,7 @@ body {
 .gallery-select-control {
   border-radius: 4px;
   font-family: inherit;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   padding: 10px 0 15px 12px;
   font-size: 18px;
   font-weight: 400;
@@ -1606,14 +1608,15 @@ body {
   cursor: pointer;
   width: 292px;
   height: 49px;
+  background-color: #ffffff;
 }
 
 .gallery-select-control:hover {
-  border: 2px solid #68A2CA;
+  border: 2px solid #68a2ca;
 }
 
 .gallery-select-control:active {
-  border: 2px solid #3F5E72;
+  border: 2px solid #3f5e72;
 }
 
 .view-wrapper {
@@ -1692,7 +1695,7 @@ body {
   padding: 20px;
   padding-bottom: 17px;
   border-radius: 4px;
-  border: 1px solid #aaaaaa;
+  border: 1px solid #e6e6e6;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -1793,7 +1796,7 @@ body {
 
 
 .button-favorite:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-favorit:active {
@@ -1905,6 +1908,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 20px;
 }
 
 .pagination-link:active {
@@ -1924,5 +1928,5 @@ body {
 }
 
 .pagination-item:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
