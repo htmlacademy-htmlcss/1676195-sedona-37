@@ -1170,7 +1170,6 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-
 .home-link {
   background-image: url("../images/home-catalog.svg");
   background-repeat: no-repeat;
@@ -1856,6 +1855,7 @@ a {
 }
 
 /*______pagination _______*/
+
 .pagination {
   margin: 0;
   padding: 0;
