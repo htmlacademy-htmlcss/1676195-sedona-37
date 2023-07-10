@@ -76,7 +76,7 @@
             </li>
             <li class="advantages-item">
               <h3 class="advantages-title">Красивая дорога</h3>
-              <p class="advantages-text"><span class="text-nowrap">Ехать в Седону из Лас-Вегаса </span> совсем не
+              <p class="advantages-text">Ехать в Седону из Лас-Вегаса  совсем не
                 скучно!</p>
             </li>
             <li class="advantages-item">
@@ -213,14 +213,14 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form-wrapper">
                 <label class="modal-label" for="date-field">Дата Заезда:</label>
-                <input class="modal-date modal-date-went" type="text" name="date-start" id="date-field" value="27 апреля 2020">
+                <input class="modal-date modal-date-went" type="text" name="date-start" required id="date-field" value="27 апреля 2020">
             </div>
             <p class="error-message">Мы не можем отправить вас в прошлое</p>
             <div class="form-wrapper">
                 <label class="modal-label" for="date-field-end">
               Дата Выезда:
                 </label>
-                <input class="modal-date  modal-date-went" type="text" name="date-end" id="date-field-end" value="1 сентября 2023">
+                <input class="modal-date  modal-date-went" type="text" required name="date-end" id="date-field-end" value="1 сентября 2023">
             </div>
             <p class="okay-message">На эти даты есть свободные номера. Пока есть.</p>
             <div class="form-wrapper form-wrapper-count">
@@ -231,14 +231,14 @@
                   <div class="button-wrapper">
                        <button class="decrease decrease-minus" type="button">
                          <span class="visually-hidden">Уменьшить количество взрослых</span>
-                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                         <svg class="decrease-button" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M3 9V11H17V9H3Z"/>
                          </svg>
                        </button>
-                      <input class="modal-count" type="text" name="adult-number" id="adult-number" value="2">
+                      <input class="modal-count" type="text" required name="adult-number" id="adult-number" value="2">
                       <button class="decrease decrease-plus" type="button">
                         <span class="visually-hidden">Увеличить количество взрослых</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
+                        <svg class="decrease-button" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
                         </svg>
                       </button>
                   </div>
@@ -264,14 +264,14 @@
                     <div class="button-wrapper">
                       <button class="decrease decrease-minus" type="button">
                           <span class="visually-hidden">Уменьшить количество детей</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                        <svg class="decrease-button" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3 9V11H17V9H3Z"/>
                         </svg>
                       </button>
-                      <input class="modal-count" type="text" name="kids-number" id="kids-number" value="2">
+                      <input class="modal-count" type="text" required name="kids-number" id="kids-number" value="2">
                       <button class="decrease decrease-plus" type="button">
                         <span class="visually-hidden">Увеличить количество детей</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
+                        <svg class="decrease-button" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path  d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
                         </svg>
                       </button>
                     </div>
